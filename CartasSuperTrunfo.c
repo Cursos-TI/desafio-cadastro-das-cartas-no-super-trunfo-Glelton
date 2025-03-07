@@ -9,7 +9,7 @@
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    char estado;
+    char estado[10];
     char codigo[50];
     char nome_cidade[50];
     int populacao;
@@ -17,19 +17,11 @@ int main() {
     float pib;
     int numer_turist;
 
-    char estado1;
-    char codigo1[50];
-    char nome_cidade1[50];
-    int populacao1;
-    float area1;
-    float pib1;
-    int numer_turist1;
-
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
-    printf("Bem vindo ao jogo!\n");
+    printf("\n\nBem vindo ao jogo!\n");
     printf("\nPor favor, informe as informacoes para a CARTA 1:\n");
 
     printf("Informe uma letra de 'A' a 'H'(representando um dos oito estados).\n");
@@ -54,6 +46,14 @@ int main() {
     scanf("%d", &numer_turist);
 
     // Criando os codigos da CARTA 2
+
+    char estado1[10];
+    char codigo1[50];
+    char nome_cidade1[50];
+    int populacao1;
+    float area1;
+    float pib1;
+    int numer_turist1;
 
     printf("\nAgora, vamos com as informacoes para a CARTA 2:\n");
 
@@ -85,7 +85,7 @@ int main() {
     printf("\nVeja o resultado das cartas informadas:\n");
     printf("\nCarta 1:\n");
     printf("Estado: %s\n", estado);
-    prinff("Código: %s\n", codigo);
+    printf("Código: %s\n", codigo);
     printf("Nome da Cidade: %s\n", nome_cidade);
     printf("População: %d\n", populacao);
     printf("Área: %f\n", area);
@@ -94,14 +94,14 @@ int main() {
 
     printf("\nCarta 2:\n");
     printf("Estado: %s\n", estado1);
-    prinff("Código: %s\n", codigo1);
+    printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", nome_cidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %f\n", area1);
     printf("PIB: %f\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", numer_turist1);
 
-    printf("\nBons Jogos!\n");
+    printf("\nBons Jogos!\n\n");
 
     return 0;
 }
